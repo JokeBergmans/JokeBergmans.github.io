@@ -366,6 +366,7 @@ footer div img {
 footer a {
   color: white;
   text-decoration: none;
+  margin-bottom: 5px;
 }
 
 footer a:hover {
