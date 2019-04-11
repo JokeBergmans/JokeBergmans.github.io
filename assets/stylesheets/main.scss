@@ -70,10 +70,6 @@ header {
   padding-top: 8rem;
   padding-bottom: 8rem;
 
-  .overlay {
-    @include overlay;
-  }
-
   h1 {
     font-size: 3em;
   }
@@ -312,11 +308,6 @@ header {
   min-height: 89.3vh;
   height: auto;
   text-align: center;
-
-  .overlay {
-    @include overlay;
-    height: 100%;
-  }
 
   h1 {
     position: relative;

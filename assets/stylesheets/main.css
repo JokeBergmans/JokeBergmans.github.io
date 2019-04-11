@@ -60,16 +60,6 @@ header {
   padding-bottom: 8rem;
 }
 
-header .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
-}
-
 header h1 {
   font-size: 3em;
 }
@@ -307,17 +297,6 @@ header h1 {
   min-height: 89.3vh;
   height: auto;
   text-align: center;
-}
-
-#contact .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
-  height: 100%;
 }
 
 #contact h1 {

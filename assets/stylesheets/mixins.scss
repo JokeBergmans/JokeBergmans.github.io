@@ -1,18 +1,9 @@
 @mixin btn-style {
-    color: white;
-      background-color: $turq;
-      &:hover {
-        transition-duration: 0.5s;
-        background-color: $green;
-      }
-}
+  color: white;
+  background-color: $turq;
 
-@mixin overlay {
-    position: absolute;
-    background-color: #212529;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
+  &:hover {
+    transition-duration: 0.5s;
+    background-color: $green;
+  }
 }
