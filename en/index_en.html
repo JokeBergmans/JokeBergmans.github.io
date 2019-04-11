@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/stylesheets/normalize.css" />
+  <link rel="stylesheet" href="../assets/stylesheets/main.css" />
+</head>
+
+<body onload="calculate_age()">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="dropdown">
+      <a class="navbar-brand dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="../assets/images/globe.png" class="d-inline-block align-top" alt="" /> </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item active" href="#"><img src="../assets/images/lang/uk.png" alt="United Kingdom" /><img src="../assets/images/lang/usa.png" alt="United States" />English</a>
+        <a class="dropdown-item" href="../nl/index_nl.html"><img src="../assets/images/lang/belgium.png" alt="Belgium" /><img src="../assets/images/lang/netherlands.png" alt="The Netherlands" />Nederlands</a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about_me.html">About me</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="italent.html">iTalent</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="my-5">Portfolio</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-flex justify-content-center" id="home">
+    <section class="row justify-content-center">
+      <div class="card col-8 offset-2 col-md-3 offset-md-0">
+        <img class="card-img-top" src="../assets/images/trap.jpg" alt="About me" />
+        <div class="card-body">
+          <h5 class="card-title">About me</h5>
+          <p class="card-text">I am a <em id="age"></em> year old Applied Computer Science student at Ghent University College with a passion for music.</p>
+          <a href="about_me.html" class="btn">Read more</a>
+        </div>
+      </div>
+      <div class="card col-8 offset-2 col-md-3 offset-md-0">
+        <img class="card-img-top" src="../assets/images/munchkin.jpg" alt="Projects" />
+        <div class="card-body">
+          <h5 class="card-title">Projects</h5>
+          <p class="card-text">For the course Projects-Workshops I our assignment was to implement the card game Munchkin.</p>
+          <a href="projects.html" class="btn">Read more</a>
+        </div>
+      </div>
+      <div class="card col-8 offset-2 col-md-3 offset-md-0">
+        <img class="card-img-top" src="../assets/images/iTalent.JPG" alt="iTalent" />
+        <div class="card-body">
+          <h5 class="card-title">iTalent</h5>
+          <p class="card-text">The course iTalent focuses on personal development, mostly in a professional environment.</p>
+          <a href="italent.html" class="btn">Read more</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="d-flex flex-column align-items-center">
+    <div class="d-flex flex-column">
+      <a href="https://www.facebook.com/joke.bergmans.71" target="_blank"><img src="../assets/images/facebook.png" alt="Facebook" />Facebook</a>
+      <a href="https://www.linkedin.com/in/joke-bergmans-375b8a180/" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn" />LinkedIn</a>
+      <a href="https://github.com/BergmansJoke" target="_blank"><img src="../assets/images/github.png" alt="GitHub" />GitHub</a>
+    </div>
+    <a href="contact.html">Contact</a>
+    <a href="links.html">Links</a>
+  </footer>
+
+
+  <script>
+    function calculate_age() {
+      var date = new Date(1998, 8, 16);
+      var diff_ms = Date.now() - date.getTime();
+      var age_dt = new Date(diff_ms);
+      document.getElementById("age").innerHTML = Math.abs(age_dt.getUTCFullYear() - 1970);
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

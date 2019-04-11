@@ -1,0 +1,409 @@
+html {
+  overflow-x: hidden;
+}
+
+html body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+
+/*--NAVBAR--*/
+nav .dropdown .dropdown-toggle::after {
+  color: grey;
+}
+
+nav .dropdown .dropdown-menu a {
+  color: #2ab5be;
+}
+
+nav .dropdown .dropdown-menu a:hover {
+  color: #3dbd3d;
+  background: none;
+}
+
+nav .dropdown .dropdown-menu a img {
+  height: 15px;
+  margin-right: 5px;
+}
+
+nav .dropdown .dropdown-menu .active {
+  color: #3dbd3d;
+  background: none;
+}
+
+nav div ul {
+  font-size: 1.2em;
+}
+
+nav div ul li {
+  margin-right: 15px;
+}
+
+nav div ul li a {
+  color: #2ab5be !important;
+}
+
+nav div ul li a:hover {
+  color: #3dbd3d !important;
+}
+
+nav div ul li .active {
+  color: #3dbd3d !important;
+}
+
+/*--HEADER--*/
+header {
+  position: relative;
+  background: url(../images/537185-PJJ1GX-302.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+/*--CONTENT--*/
+/*--HOME--*/
+#home {
+  margin: 3em 0;
+}
+
+#home section {
+  width: 100%;
+  margin: 0 !important;
+}
+
+#home section .card {
+  margin: 15px;
+  padding-top: 15px;
+  background-color: lightgray;
+  opacity: 0.8;
+}
+
+#home section .card .card-body .card-title {
+  font-weight: bold;
+}
+
+#home section .card .card-body .card-text {
+  margin-bottom: 1em;
+  line-height: 120%;
+}
+
+#home section .card .card-body .btn {
+  color: white;
+  background-color: #2ab5be;
+}
+
+#home section .card .card-body .btn:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background-color: #3dbd3d;
+}
+
+/*--ABOUT__*/
+#about {
+  margin-top: 15px;
+}
+
+#about section {
+  margin: 0 !important;
+}
+
+#about section p {
+  padding: 15px;
+  color: gray;
+  font-size: 1.3em;
+  line-height: 150%;
+}
+
+#about section p i {
+  font-style: italic;
+}
+
+#about section h2 {
+  font-size: 1.5em;
+  color: #2ab5be;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+#about section div .row {
+  margin: 0;
+}
+
+#about section div .row div {
+  padding: 15px;
+}
+
+#about section div .row div img {
+  -webkit-filter: opacity(85%);
+          filter: opacity(85%);
+}
+
+#about section #skills {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#about section #skills div {
+  padding: 5px 0 0 15px;
+  color: gray;
+  line-height: 150%;
+  font-size: 1.1em;
+}
+
+#about section #skills div ul li {
+  margin-bottom: 4px;
+}
+
+#about section #skills div ul li em {
+  color: #3dbd3d;
+}
+
+#about section #skills div .progress {
+  padding: 0;
+  height: 30px;
+  background: none;
+}
+
+#about section #skills div .progress .progress-bar {
+  background-color: #3dbd3d;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  height: auto;
+  color: white;
+  font-size: 0.8em;
+}
+
+/*--PROJECTS--*/
+#projects {
+  margin: 15px 15px 0 15px;
+  color: gray;
+}
+
+#projects h2 {
+  font-size: 1.5em;
+  color: #2ab5be;
+  margin-top: 5px;
+}
+
+#projects h3 {
+  font-size: 1.4em;
+  color: #3dbd3d;
+  margin-top: 5px;
+}
+
+#projects h4 {
+  color: gray;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#projects h4 + p {
+  padding-top: 0 !important;
+}
+
+#projects section {
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+#projects section p {
+  padding: 15px 0;
+  font-size: 1.2em;
+  line-height: 150%;
+}
+
+#projects section img {
+  height: 250px;
+  margin: 0 auto;
+}
+
+#projects section div {
+  margin-right: 20px;
+}
+
+/*--ITALENT--*/
+#italent {
+  margin: 15px 15px 0 15px;
+  color: gray;
+}
+
+#italent h2 {
+  font-size: 1.5em;
+  color: #2ab5be;
+  margin-top: 5px;
+}
+
+#italent h3 {
+  font-size: 1.4em;
+  color: #3dbd3d;
+  margin-top: 5px;
+}
+
+#italent h4 {
+  color: gray;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#italent h4 + p {
+  padding-top: 0 !important;
+}
+
+#italent section {
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+#italent section p {
+  padding: 15px 0;
+  font-size: 1.2em;
+  line-height: 150%;
+}
+
+#italent section div {
+  margin-bottom: 5px;
+}
+
+#italent section div ul {
+  list-style: square;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#italent section div ul li {
+  display: list-item;
+  color: gray;
+  font-size: 1.1em;
+  line-height: 130%;
+}
+
+#italent section #chart {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 20px auto;
+}
+
+/*--CONTACT--*/
+#contact {
+  background: url(../images/537185-PJJ1GX-302.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 89.3vh;
+  height: auto;
+  text-align: center;
+}
+
+#contact .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  height: 89.3%;
+}
+
+#contact h1 {
+  position: relative;
+  padding-top: 15rem;
+  color: white;
+  font-size: 3em;
+}
+
+#contact form {
+  padding-top: 5rem;
+  height: 100%;
+}
+
+#contact form textarea {
+  resize: none;
+}
+
+#contact form .btn {
+  color: white;
+  background-color: #2ab5be;
+}
+
+#contact form .btn:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background-color: #3dbd3d;
+}
+
+/*--LINKS--*/
+#links {
+  margin-left: 20px;
+  padding: 10px;
+  min-height: 45.6vh;
+  color: gray;
+  font-size: 1.3em;
+  line-height: 150%;
+}
+
+#links ul {
+  list-style: square;
+}
+
+#links ul li {
+  display: list-item;
+}
+
+#links ul li a {
+  color: #2ab5be;
+}
+
+#links ul li a:hover {
+  color: #3dbd3d;
+  text-decoration: none;
+}
+
+/*--FOOTER--*/
+footer {
+  background-color: gray;
+  padding: 7px;
+}
+
+footer div img {
+  margin-right: 5px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  h1 {
+    font-size: 5rem !important;
+  }
+  #links {
+    min-height: 29.6vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */

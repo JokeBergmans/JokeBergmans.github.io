@@ -1,0 +1,405 @@
+@import "colors.scss";
+@import "mixins.scss";
+
+html {
+  overflow-x: hidden;
+
+  body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/*--NAVBAR--*/
+nav {
+  .dropdown {
+    .dropdown-toggle::after {
+      color: grey;
+    }
+
+    .dropdown-menu {
+      a {
+        color: $turq;
+
+        &:hover {
+          color: $green;
+          background: none;
+        }
+
+        img {
+          height: 15px;
+          margin-right: 5px;
+        }
+      }
+
+      .active {
+        color: $green;
+        background: none;
+      }
+    }
+  }
+
+  div {
+    ul {
+      font-size: 1.2em;
+
+      li {
+        margin-right: 15px;
+
+        a {
+          color: $turq !important;
+
+          &:hover {
+            color: $green !important;
+          }
+        }
+
+        .active {
+          color: $green !important;
+        }
+      }
+    }
+  }
+}
+
+/*--HEADER--*/
+header {
+  position: relative;
+  background: url(../images/537185-PJJ1GX-302.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  .overlay {
+    @include overlay;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
+/*--CONTENT--*/
+/*--HOME--*/
+#home {
+  margin: 3em 0;
+
+  section {
+    width: 100%;
+    margin: 0 !important;
+
+    .card {
+      margin: 15px;
+      padding-top: 15px;
+      background-color: lightgray;
+      opacity: 0.8;
+
+      .card-body {
+        .card-title {
+          font-weight: bold;
+        }
+
+        .card-text {
+          margin-bottom: 1em;
+          line-height: 120%;
+        }
+
+        .btn {
+          @include btn-style;
+        }
+      }
+    }
+  }
+}
+
+/*--ABOUT__*/
+#about {
+  margin-top: 15px;
+
+  section {
+    margin: 0 !important;
+
+    p {
+      padding: 15px;
+      color: gray;
+      font-size: 1.3em;
+      line-height: 150%;
+
+      i {
+        font-style: italic;
+      }
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: $turq;
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+
+    div {
+      .row {
+        margin: 0;
+
+        div {
+          padding: 15px;
+
+          img {
+            filter: opacity(85%);
+          }
+        }
+      }
+    }
+
+    #skills {
+      padding: 0;
+      margin-bottom: 20px;
+
+      div {
+        padding: 5px 0 0 15px;
+        color: gray;
+        line-height: 150%;
+        font-size: 1.1em;
+
+        ul li {
+          margin-bottom: 4px;
+
+          em {
+            color: $green;
+          }
+        }
+
+
+        .progress {
+          padding: 0;
+          height: 30px;
+          background: none;
+
+          .progress-bar {
+            background-color: $green;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            height: auto;
+            color: white;
+            font-size: 0.8em;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+/*--PROJECTS--*/
+#projects {
+  margin: 15px 15px 0 15px;
+  color: gray;
+
+
+  h2 {
+    font-size: 1.5em;
+    color: $turq;
+    margin-top: 5px;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    color: $green;
+    margin-top: 5px;
+  }
+
+  h4 {
+    color: gray;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    &+p {
+      padding-top: 0 !important;
+    }
+  }
+
+  section {
+    margin-bottom: 20px;
+    margin-left: 15px;
+
+    p {
+      padding: 15px 0;
+      font-size: 1.2em;
+      line-height: 150%;
+    }
+
+    img {
+      height: 250px;
+      margin: 0 auto;
+    }
+
+    div {
+      margin-right: 20px;
+    }
+  }
+
+}
+
+/*--ITALENT--*/
+#italent {
+  margin: 15px 15px 0 15px;
+  color: gray;
+
+  h2 {
+    font-size: 1.5em;
+    color: $turq;
+    margin-top: 5px;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    color: $green;
+    margin-top: 5px;
+  }
+
+  h4 {
+    color: gray;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    &+p {
+      padding-top: 0 !important;
+    }
+  }
+
+  section {
+    margin-bottom: 20px;
+    margin-left: 15px;
+
+    p {
+      padding: 15px 0;
+      font-size: 1.2em;
+      line-height: 150%;
+    }
+
+    div {
+      margin-bottom: 5px;
+
+      ul {
+        list-style: square;
+        margin-left: 20px;
+        margin-bottom: 10px;
+
+        li {
+          display: list-item;
+          color: gray;
+          font-size: 1.1em;
+          line-height: 130%;
+        }
+      }
+    }
+
+    #chart {
+      max-width: 300px;
+      max-height: 300px;
+      margin: 20px auto;
+    }
+  }
+}
+
+/*--CONTACT--*/
+#contact {
+  background: url(../images/537185-PJJ1GX-302.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 89.3vh;
+  height: auto;
+  text-align: center;
+
+  .overlay {
+    @include overlay;
+    height: 89.3%;
+  }
+
+  h1 {
+    position: relative;
+    padding-top: 15rem;
+    color: white;
+    font-size: 3em;
+  }
+
+  form {
+    padding-top: 5rem;
+    height: 100%;
+
+    textarea {
+      resize: none;
+    }
+
+    .btn {
+      @include btn-style;
+    }
+  }
+}
+
+/*--LINKS--*/
+#links {
+  margin-left: 20px;
+  padding: 10px;
+  min-height: 45.6vh;
+  color: gray;
+  font-size: 1.3em;
+  line-height: 150%;
+
+  ul {
+    list-style: square;
+
+    li {
+      display: list-item;
+
+      a {
+        color: $turq;
+
+        &:hover {
+          color: $green;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/*--FOOTER--*/
+footer {
+  background-color: gray;
+  padding: 7px;
+
+  div {
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: lightgrey;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  h1 {
+    font-size: 5rem !important;
+  }
+
+  #links {
+    min-height: 29.6vh;
+
+  }
+}

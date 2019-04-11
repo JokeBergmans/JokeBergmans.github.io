@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/stylesheets/normalize.css" />
+  <link rel="stylesheet" href="../assets/stylesheets/main.css" />
+</head>
+
+<body onload="drawChart()">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="dropdown">
+      <a class="navbar-brand dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="../assets/images/globe.png" class="d-inline-block align-top" alt="">
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="../en/italent.html"><img src="../assets/images/lang/uk.png" alt="Verenigd Koninkrijk" /><img src="../assets/images/lang/usa.png" alt="Verenigde Staten" />English</a>
+        <a class="dropdown-item active" href="#"><img src="../assets/images/lang/belgium.png" alt="België" /><img src="../assets/images/lang/netherlands.png" alt="Nederland" />Nederlands</a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index_nl.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="over_mij.html">Over mij</a></li>
+        <li class="nav-item"><a class="nav-link" href="projecten.html">Projecten</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">iTalent</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="my-5">iTalent</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container-flex" id="italent">
+    <section>
+      <h2>Individu en IT</h2>
+      <h3>DISC-test</h3>
+      <div class="d-flex flex-column">
+        <p> De DISC-test moet deelnemers inzicht geven in hun eigen persoonlijkheidsstijl, gedrag en manier van communiceren.
+          Hiervoor worden gedragskenmerken gegroepeerd in 4 stijlen: Dominant, Invloed, Stabiel en Consciëntieus.</p>
+        <canvas id="chart"></canvas>
+        <p> Mijn meest dominante gedragsstijl is Consciëntieus, gevolgd door Stabiel.
+          Met deze resultaten is het nu mogelijk om een schatting te maken van mijn sterke en minder sterke punten:</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Sterke punten</h4>
+          <ul>
+            <li>Meestal tevreden en past zich aan</li>
+            <li>Niet erg strijdlustig</li>
+            <li>Eerder voorzichtig dan impulsief, vermijdt risico's</li>
+            <li>Gedraagt zich op een tactvolle, diplomatieke manier en streeft naar een stabiel en geordend leven</li>
+            <li>Vindt het prima om volgens vaststaande procedures te werken en te leven</li>
+            <li>Geduldig, kalm en beheerst</li>
+            <li>Zeer bereid om anderen te helpen - vooral mensen die ze als vrienden beschouwt</li>
+            <li>Analytisch ingesteld</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Zwakke punten</h4>
+          <ul>
+            <li>Laat liever eerst anderen het initiatief nemen of problemen oplossen</li>
+            <li>Minder sociaal actief</li>
+            <li>Staat minder open voor uitdagingen</li>
+            <li>Kan moeilijker omgaan met onverwachte situaties</li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        Ik kan mijzelf hier zeker in vinden, zowel op school als in het dagelijks leven ben ik eerder een rustig persoon en hecht ik veel belang aan orde en routine.
+        Ook de zwakke punten zijn werkpunten waar ik mij van bewust ben, vooral de moeite met initiatief nemen is heel herkenbaar.
+        In teamverband heb ik dus eerder nood aan een leidersfiguur die opdrachten kan toewijzen. Ook werk ik makkelijker naar deadlines toe.
+        <br>
+        Ik zou niet zeggen dat deze test mij veel heeft bijgeleerd, maar het is zeker verrijkend om een opsomming te kunnen maken van sterke en minder sterke kanten om zo meer inzicht te krijgen in mijn persoonlijkheid.
+        Ook naar samenwerking met anderen toe kan deze test helpen, zoals het teampaspoort dat we hebben opgesteld voor InnovIT.
+      </p>
+    </section>
+
+
+    <section>
+      <h2>Ondernemend en IT</h2>
+      <h3>InnovIT</h3>
+      <p>Het doel van deze opdracht was het bedenken van een een innovatieve applicatie rond een van 4 maatschappelijke thema's (milieu, veiligheid, mobiliteit en gezondheid).
+        Dit concept werkten we steeds verder uit, met als eindresultaat mock-ups en een commercial die we gebruikten om op de InnovIT Awards ons idee te pitchen. </p>
+      <h4>Ons idee</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ex ipsam esse amet. Eaque, optio quod? Harum dolore unde deserunt aliquid expedita nisi, voluptate praesentium assumenda? Inventore impedit vitae rem!
+      </p>
+    </section>
+    <section>
+      <h2>Internationaal en IT</h2>
+      <p></p>
+    </section>
+    <section>
+      <h2>Maatschappij en IT</h2>
+
+      <p></p>
+    </section>
+  </main>
+  <footer class="d-flex flex-column align-items-center">
+    <div class="d-flex flex-column">
+      <a href="https://www.facebook.com/joke.bergmans.71" target="_blank"><img src="../assets/images/facebook.png" alt="Facebook" />Facebook</a>
+      <a href="https://www.linkedin.com/in/joke-bergmans-375b8a180/" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn" />LinkedIn</a>
+      <a href="https://github.com/BergmansJoke" target="_blank"><img src="../assets/images/github.png" alt="GitHub" />GitHub</a>
+    </div>
+    <a href="contact.html">Contact</a>
+    <a href="links.html">Links</a>
+  </footer>
+
+  <script>
+    function drawChart() {
+      var ctx = document.getElementById('chart').getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: ['Consciëntieus', 'Stabiel', 'Dominant', 'Invloed'],
+          datasets: [{
+            data: [40, 32, 14, 14],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.4)',
+              'rgba(42, 181, 190, 0.4)',
+              'rgba(255, 206, 86, 0.4)',
+              'rgba(61, 189, 61, 0.4)',
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(42, 181, 190, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(61, 189, 61, 1)',
+            ],
+            borderWidth: 1.5
+          }]
+        },
+        options: {
+          maintainAspectRatio: false
+        }
+      });
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
