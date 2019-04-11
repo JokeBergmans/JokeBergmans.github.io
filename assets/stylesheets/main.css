@@ -294,9 +294,10 @@ header h1 {
 #contact {
   background: url(../images/537185-PJJ1GX-302.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 89.3vh;
+  min-height: 86.7vh;
   height: auto;
   text-align: center;
+  padding-bottom: 22px;
 }
 
 #contact h1 {
