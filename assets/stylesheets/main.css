@@ -200,6 +200,10 @@ header h1 {
   font-size: 0.8em;
 }
 
+#about section #images {
+  margin: 15px 0;
+}
+
 /*--PROJECTS--*/
 #projects {
   margin: 15px 15px 0 15px;
