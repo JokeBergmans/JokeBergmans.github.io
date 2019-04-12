@@ -129,6 +129,24 @@ header h1 {
   margin-left: 15px;
 }
 
+#about section dl {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  line-height: 130%;
+}
+
+#about section dl dt {
+  margin-top: 15px;
+  color: #3dbd3d;
+  font-size: 1.3em;
+}
+
+#about section dl dd {
+  color: gray;
+  font-size: 1.1em;
+  margin: 10px 0 0 10px;
+}
+
 #about section div .row {
   margin: 0;
 }

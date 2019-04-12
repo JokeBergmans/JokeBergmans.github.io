@@ -133,6 +133,24 @@ header {
       margin-left: 15px;
     }
 
+    dl {
+      margin-left: 15px;
+      margin-bottom: 10px;
+      line-height: 130%;
+
+      dt {
+        margin-top: 15px;
+        color: $green;
+        font-size: 1.3em;
+      }
+
+      dd {
+        color: gray;
+        font-size: 1.1em;
+        margin: 10px 0 0 10px;
+      }
+    }
+
     div {
       .row {
         margin: 0;
