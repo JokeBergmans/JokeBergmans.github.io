@@ -7,3 +7,13 @@
     background-color: $green;
   }
 }
+
+@mixin a-style {
+  color: $turq;
+
+  &:hover {
+    text-decoration: none;
+    color: $green;
+  }
+
+}

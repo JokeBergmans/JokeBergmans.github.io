@@ -103,19 +103,28 @@ header h1 {
 }
 
 /*--ABOUT__*/
-#about {
-  margin-top: 15px;
-}
-
 #about section {
   margin: 0 !important;
 }
 
+#about section section > div {
+  margin-bottom: 20px;
+}
+
 #about section p {
-  padding: 15px;
+  padding-left: 15px;
   color: gray;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 150%;
+}
+
+#about section p a {
+  color: #2ab5be;
+}
+
+#about section p a:hover {
+  text-decoration: none;
+  color: #3dbd3d;
 }
 
 #about section p i {
@@ -125,26 +134,22 @@ header h1 {
 #about section h2 {
   font-size: 1.5em;
   color: #2ab5be;
-  margin-top: 5px;
-  margin-left: 15px;
+  margin: 20px 0 10px 15px;
 }
 
 #about section dl {
-  margin-left: 15px;
-  margin-bottom: 10px;
-  line-height: 130%;
+  margin: 15px 0 20px 15px;
+  line-height: 150%;
+  color: gray;
 }
 
 #about section dl dt {
-  margin-top: 15px;
-  color: #3dbd3d;
   font-size: 1.3em;
 }
 
 #about section dl dd {
-  color: gray;
   font-size: 1.1em;
-  margin: 10px 0 0 10px;
+  margin: 10px;
 }
 
 #about section div .row {
@@ -162,11 +167,10 @@ header h1 {
 
 #about section #skills {
   padding: 0;
-  margin-bottom: 20px;
 }
 
 #about section #skills div {
-  padding: 5px 0 0 15px;
+  padding: 0 0 0 15px;
   color: gray;
   line-height: 150%;
   font-size: 1.1em;
@@ -231,9 +235,18 @@ header h1 {
 }
 
 #projects section p {
-  padding: 15px 0;
+  padding: 10px 0 15px 0;
   font-size: 1.2em;
   line-height: 150%;
+}
+
+#projects section p a {
+  color: #2ab5be;
+}
+
+#projects section p a:hover {
+  text-decoration: none;
+  color: #3dbd3d;
 }
 
 #projects section img {
@@ -280,7 +293,7 @@ header h1 {
 }
 
 #italent section p {
-  padding: 15px 0;
+  padding: 10px 0 15px 0;
   font-size: 1.2em;
   line-height: 150%;
 }
@@ -368,8 +381,8 @@ header h1 {
 }
 
 #links ul li a:hover {
-  color: #3dbd3d;
   text-decoration: none;
+  color: #3dbd3d;
 }
 
 /*--FOOTER--*/

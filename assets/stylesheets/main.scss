@@ -110,16 +110,22 @@ header {
 
 /*--ABOUT__*/
 #about {
-  margin-top: 15px;
-
   section {
     margin: 0 !important;
 
+    section>div {
+      margin-bottom: 20px;
+    }
+
     p {
-      padding: 15px;
+      padding-left: 15px;
       color: gray;
-      font-size: 1.3em;
+      font-size: 1.2em;
       line-height: 150%;
+
+      a {
+        @include a-style;
+      }
 
       i {
         font-style: italic;
@@ -129,25 +135,22 @@ header {
     h2 {
       font-size: 1.5em;
       color: $turq;
-      margin-top: 5px;
-      margin-left: 15px;
+      margin: 20px 0 10px 15px;
+
     }
 
     dl {
-      margin-left: 15px;
-      margin-bottom: 10px;
-      line-height: 130%;
+      margin: 15px 0 20px 15px;
+      line-height: 150%;
+      color: gray;
 
       dt {
-        margin-top: 15px;
-        color: $green;
         font-size: 1.3em;
       }
 
       dd {
-        color: gray;
         font-size: 1.1em;
-        margin: 10px 0 0 10px;
+        margin: 10px;
       }
     }
 
@@ -167,10 +170,9 @@ header {
 
     #skills {
       padding: 0;
-      margin-bottom: 20px;
 
       div {
-        padding: 5px 0 0 15px;
+        padding: 0 0 0 15px;
         color: gray;
         line-height: 150%;
         font-size: 1.1em;
@@ -182,7 +184,6 @@ header {
             color: $green;
           }
         }
-
 
         .progress {
           padding: 0;
@@ -239,9 +240,13 @@ header {
     margin-left: 15px;
 
     p {
-      padding: 15px 0;
+      padding: 10px 0 15px 0;
       font-size: 1.2em;
       line-height: 150%;
+
+      a {
+        @include a-style;
+      }
     }
 
     img {
@@ -289,7 +294,7 @@ header {
     margin-left: 15px;
 
     p {
-      padding: 15px 0;
+      padding: 10px 0 15px 0;
       font-size: 1.2em;
       line-height: 150%;
     }
@@ -365,12 +370,7 @@ header {
       display: list-item;
 
       a {
-        color: $turq;
-
-        &:hover {
-          color: $green;
-          text-decoration: none;
-        }
+        @include a-style;
       }
     }
   }
