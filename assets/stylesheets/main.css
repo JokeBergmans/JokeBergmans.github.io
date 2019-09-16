@@ -104,7 +104,7 @@ header h1 {
 
 /*--ABOUT--*/
 #about section {
-  margin: 0 !important;
+  margin: 0 0 15px 0 !important;
 }
 
 #about section section > div {
@@ -145,6 +145,8 @@ header h1 {
 
 #about section dl dt {
   font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 #about section dl dd {
@@ -364,7 +366,7 @@ header h1 {
 
 /*--LINKS--*/
 #links {
-  margin-left: 20px;
+  margin: 0 0 30px 15px;
   padding: 10px;
   min-height: 45.6vh;
   color: gray;
@@ -373,18 +375,28 @@ header h1 {
 }
 
 #links ul {
-  list-style: square;
+  margin-bottom: 20px;
 }
 
 #links ul li {
-  display: list-item;
+  font-weight: bold;
 }
 
-#links ul li a {
+#links ul ul {
+  list-style: square;
+  margin-left: 50px;
+}
+
+#links ul ul li {
+  display: list-item;
+  font-weight: normal;
+}
+
+#links ul ul li a {
   color: #2ab5be;
 }
 
-#links ul li a:hover {
+#links ul ul li a:hover {
   text-decoration: none;
   color: #3dbd3d;
 }
@@ -392,7 +404,7 @@ header h1 {
 /*--FOOTER--*/
 footer {
   background-color: gray;
-  padding: 7px;
+  padding: 10px;
 }
 
 footer div img {

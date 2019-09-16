@@ -111,7 +111,7 @@ header {
 /*--ABOUT--*/
 #about {
   section {
-    margin: 0 !important;
+    margin: 0 0 15px 0 !important;
 
     section>div {
       margin-bottom: 20px;
@@ -146,6 +146,8 @@ header {
 
       dt {
         font-size: 1.3em;
+        font-weight: bold;
+        margin-top: 20px;
       }
 
       dd {
@@ -360,7 +362,7 @@ header {
 
 /*--LINKS--*/
 #links {
-  margin-left: 20px;
+  margin: 0 0 30px 15px;
   padding: 10px;
   min-height: 45.6vh;
   color: gray;
@@ -368,13 +370,22 @@ header {
   line-height: 150%;
 
   ul {
-    list-style: square;
-
+    margin-bottom: 20px;
     li {
-      display: list-item;
+      font-weight: bold;
+    }
 
-      a {
-        @include a-style;
+    ul {
+      list-style: square;
+      margin-left: 50px;
+
+      li {
+        display: list-item;
+        font-weight: normal;
+
+        a {
+          @include a-style;
+        }
       }
     }
   }
@@ -383,7 +394,7 @@ header {
 /*--FOOTER--*/
 footer {
   background-color: gray;
-  padding: 7px;
+  padding: 10px;
 
   div {
     img {
