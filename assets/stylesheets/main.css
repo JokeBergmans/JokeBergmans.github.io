@@ -307,6 +307,10 @@ header h1 {
   margin-bottom: 5px;
 }
 
+#italent section div img {
+  height: 100px;
+}
+
 #italent section div ul {
   list-style: square;
   margin-left: 20px;

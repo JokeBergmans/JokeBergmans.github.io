@@ -168,7 +168,11 @@ header {
           }
         }
       }
+
     }
+
+
+
 
     #skills {
       padding: 0;
@@ -305,6 +309,10 @@ header {
 
     div {
       margin-bottom: 5px;
+
+      img {
+        height: 100px;
+      }
 
       ul {
         list-style: square;
