@@ -324,7 +324,7 @@ header h1 {
   line-height: 130%;
 }
 
-#italent section #chart {
+#italent section .chart {
   max-width: 300px;
   max-height: 300px;
   margin: 20px auto;
