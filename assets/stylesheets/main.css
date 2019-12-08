@@ -118,17 +118,17 @@ header h1 {
   line-height: 150%;
 }
 
-#about section p a {
+#about section p i {
+  font-style: italic;
+}
+
+#about section a {
   color: #2ab5be;
 }
 
-#about section p a:hover {
+#about section a:hover {
   text-decoration: none;
   color: #3dbd3d;
-}
-
-#about section p i {
-  font-style: italic;
 }
 
 #about section h2 {

@@ -123,13 +123,13 @@ header {
       font-size: 1.2em;
       line-height: 150%;
 
-      a {
-        @include a-style;
-      }
-
       i {
         font-style: italic;
       }
+    }
+
+    a {
+      @include a-style;
     }
 
     h2 {
