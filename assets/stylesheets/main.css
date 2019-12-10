@@ -137,6 +137,22 @@ header h1 {
   margin: 20px 0 10px 15px;
 }
 
+#about section .btn {
+  color: white;
+  background-color: #2ab5be;
+  opacity: 0.8;
+}
+
+#about section .btn:hover {
+  color: white;
+}
+
+#about section .btn:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background-color: #3dbd3d;
+}
+
 #about section dl {
   margin: 15px 0 20px 15px;
   line-height: 150%;
