@@ -327,6 +327,11 @@ header h1 {
   height: 100px;
 }
 
+#italent section div span img {
+  max-width: 100%;
+  height: auto;
+}
+
 #italent section div ul {
   list-style: square;
   margin-left: 20px;
@@ -340,10 +345,27 @@ header h1 {
   line-height: 130%;
 }
 
+#italent section ol {
+  list-style: decimal;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#italent section ol li {
+  display: list-item;
+  color: gray;
+  font-size: 1.1em;
+  line-height: 130%;
+}
+
 #italent section .chart {
   max-width: 300px;
   max-height: 300px;
   margin: 20px auto;
+}
+
+#italent section #ofman div {
+  margin-bottom: 50px;
 }
 
 /*--CONTACT--*/
