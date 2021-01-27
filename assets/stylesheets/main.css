@@ -227,7 +227,11 @@ header h1 {
   color: gray;
 }
 
-#projects h2 {
+#projects .accordion {
+  margin: 30px;
+}
+
+#projects h2 button {
   font-size: 1.5em;
   color: #2ab5be;
   margin-top: 5px;
@@ -250,32 +254,27 @@ header h1 {
   padding-top: 0 !important;
 }
 
-#projects section {
-  margin-bottom: 20px;
-  margin-left: 15px;
-}
-
-#projects section p {
+#projects p {
   padding: 10px 0 15px 0;
   font-size: 1.2em;
   line-height: 150%;
 }
 
-#projects section p a {
+#projects p a {
   color: #2ab5be;
 }
 
-#projects section p a:hover {
+#projects p a:hover {
   text-decoration: none;
   color: #3dbd3d;
 }
 
-#projects section img {
+#projects img {
   height: 250px;
   margin: 0 auto;
 }
 
-#projects section div {
+#projects div {
   margin-right: 20px;
 }
 
@@ -392,6 +391,10 @@ header h1 {
 
 #contact form textarea {
   resize: none;
+}
+
+#contact form .form-group {
+  margin-bottom: 16px;
 }
 
 #contact form .btn {
