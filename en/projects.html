@@ -55,40 +55,105 @@
     </div>
   </header>
   <main class="container-flex" id="projects">
-    <section>
-      <h2>Munchkin</h2>
-      <p>For the course Projects-Workshops I we were given the challenging task of implementing the card game Munchkin,
-        both textually and graphically.
-        This proved to be a more difficult task than expected, but in the end it was one of the most educational
-        experiences I have had so far.
-        By working out a complete program, including a database, starting from only use cases, I gained a lot of insight
-        into the development process.
-        Of course, there were sometimes unforeseen difficulties, which meant that I had to devise and try out various
-        solution strategies.
-        Of all courses, this was certainly the most difficult for me, but also the most useful.</p>
-      <h3>What is Munchkin?</h3>
-      <p>Munchkin is a card game that is the ultimate parody of Dungeons & Dragons.
-        You start the game as a level one human.
-        But during the game you can change to a dwarf, elf or halfling.
-        Fight monsters, take the treasure and steal the treasure from your teammates.
-        To achieve level ten and win the game, truly everything is allowed.
-      </p>
-      <h4>Gameplay</h4>
-      <p>Open the door and see what is behind it: is it a monster or an object.
-        If it's a monster, you can choose to fight it. But make sure you can beat it, otherwise you will have to flee.
-        If you make it, you get it's treasure and you gain a level.
-        If you are unable to defeat the monster, you can seek the help of your fellow players.
-        But they don't help you for free and they can ask you to share the treasure.
-        You can also increase the challenge by throwing potions, involving other monsters in the fight or making the
-        monster that someone else is fighting stronger.
-        Almost everything is allowed in Munchkin, as long as you make sure you win.
-        The first player to reach level ten wins the game.</p>
-      <h3>Our implementation</h3>
-      <p>You can find our complete implementation <a href="https://github.com/JokeBergmans/Munchkin" target="_blank">
-          here</a>.
-        Due to circumstances, this was unfortunately never completely finished.</p>
-
-    </section>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Munchkin
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>For my first project during my studies I was given the task to implement the card game Munchkin in Java, both textually and graphically.
+            </p>
+            <h3>What is Munchkin?</h3>
+            <p>Munchkin is a card game that is the ultimate parody of Dungeons & Dragons. You start the game as a level one human. But during the game you can change to a dwarf, elf or halfling. Fight monsters, take the treasure and steal the treasure from your teammates. To achieve level ten and win the game, truly everything is allowed.
+            </p>
+            <h4>Gameplay</h4>
+            <p>Open the door and see what is behind it: is it a monster or an object. If it's a monster, you can choose to fight it. But make sure you can beat it, otherwise you will have to flee. If you make it, you get it's treasure and you gain a level. If you are unable to defeat the monster, you can seek the help of your fellow players. But they don't help you for free and they can ask you to share the treasure. You can also increase the challenge by throwing potions, involving other monsters in the fight or making the monster that someone else is fighting stronger. Almost everything is allowed in Munchkin, as long as you make sure you win. The first player to reach level ten wins the game.</p>
+            <h3>My implementation</h3>
+            <p>You can find my implementation <a href="https://github.com/JokeBergmans/Munchkin" target="_blank">here</a>.
+            
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            ITLab
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>The project during my second year was commissioned by the ITLab of HoGent. They were looking for an application with which they could schedule guest lectures and manage registrations. The task was
+              to develop a two-part application with a central database: a Java application intended for the
+              administrators and a .NET Core web application for the students.</p>
+            <h3>Functionalities</h3>
+            <h4 class="mt-3">Java</h4>
+            <p>
+              In the Java application it is possible for administrators to schedule, change and edit sessions
+              remove. In addition
+              they can add, delete and edit users and administrators, as well as retrieve statistics from
+              past sessions.
+            </p>
+            <h4>.NET Core</h4>
+            <p>In the web application, students or other interested parties can view the future sessions per month, and subscribe/unsubscribe for sessions. They can also post feedback for past sessions that they attended. Presence is also registered by administrators in this web application.</p>
+            <h3>My implementation</h3>
+            <p>You can find my implementation <a href="https://github.com/JokeBergmans/ProjectenII" target="_blank">here</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Damien Foundation
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>To conclude my studies, we received a project commissioned by an external customer. In my case this was Damien Foundation. They requested a web application and Android app for their sponsored walks. Registration for walks is done via the web application, and the Android app serves as an aid for the walkers.</p>
+            <h3>Functionalities</h3>
+            <h4 class="mt-3">Webapplication</h4>
+            <p>
+              The web application was developed with Angular. Here users can create an account and find an overview of all walks and their route. If desired, they can register for a walk. It is also possible to follow the progress of a walker based on their participant number. This is done by marking fixed points along the route when the walker has walked past that point. In this way, the walkers maintain their privacy.
+            </p>
+            <h4>Android app</h4>
+            <p>The Android app was developed in Kotlin. The app is intended as a guidepost for walkers: they can see the route for each walk on an interactive map on which the intermediate points and food stands are indicated. A QR code will be displayed at every intermediate point along the route and can be scanned in the app. By scanning these codes followers can see in the website which points the walker has passed. In the app, walkers also have the option to turn this tracking feature off. </p>
+            <h3>My implementation</h3>
+            <p>You can find my implementation <a href="https://github.com/JokeBergmans/ProjectenIII" target="_blank">here</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            ClientManagement
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>During my studies I worked as a student at a legal consultancy firm called Infostrat. They organize training courses for lawyers and civil-law notaries. Here I helped, among other things, with providing IT support for customers. I also developed a web application with which they can manage and query their customers, training courses and registrations in one central place. Before, this was done in Excel spreadsheets. </p>
+            <h3>Functionalities</h3>
+            <p>The web application was developed in .NET Core. In the web application, everything can be managed in two ways: either from the point of a specific customer to manage all his/her registrations and payments, or from a specific training course to manage all participants and practical information. All personal data can be requested and adjusted for a customer. For a training course there is the possibility to automatically compose an e-mail for all participants based on a template. 
+            </p>
+            <h3>My implementation</h3>
+            <p>Due to privacy and security reasons, this implementation is not publicly available. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="d-flex flex-column align-items-center">
     <div class="d-flex flex-column">
